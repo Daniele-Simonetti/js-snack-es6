@@ -3,9 +3,8 @@
 // Usiamo i nuovi metodi degli array foreach o filter.
 
 // creo un array con dei numeri
-const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
-// console.log(nums);
-
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(nums);
 let newNums = [];
 // imposto una funzione
 function newArray(array, a, b) {
@@ -13,17 +12,21 @@ function newArray(array, a, b) {
     if (numero < b && numero > a) {
       // console.log(numero);
       newNums.push(numero);
+      
+      
     }
   });
   return numsInside;
 }
 
-
-// nums.forEach((elements) => {
-// });
-newArray(nums, 2, 8);
+newArray(nums, 1, 8);
 console.log(newNums);
 
+for (let i = 0; i < newNums.length; i++) {
+  const element = newNums[i];
+  
+  
+}
 
 
 
