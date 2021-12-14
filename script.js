@@ -8,25 +8,21 @@ console.log(nums);
 let newNums = [];
 // imposto una funzione
 function newArray(array, a, b) {
-  const numsInside = array.forEach((numero) => {
-    if (numero < b && numero > a) {
+  const numsInside = array.forEach((numero, index) => {
+    if (numero.index < b && numero.index > a) {
       // console.log(numero);
-      newNums.push(numero);
-      
-      
+      newNums.push(numero.index); 
     }
   });
   return numsInside;
 }
 
-newArray(nums, 1, 8);
+newArray(nums, 1, 9);
 console.log(newNums);
 
-for (let i = 0; i < newNums.length; i++) {
-  const element = newNums[i];
-  
-  
-}
+// for (let i = 0; i < newNums.length; i++) {
+//   const element = newNums[i];
+// }
 
 
 
