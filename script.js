@@ -8,11 +8,14 @@ console.log(nums);
 let newNums = [];
 // imposto una funzione
 function newArray(array, a, b) {
-  const numsInside = array.forEach((numero, index) => {
-    if (numero.index < b && numero.index > a) {
+  const numsInside = array.forEach((numero, index, array) => {
+    if (index < b && index > a) {
       // console.log(numero);
-      newNums.push(numero.index); 
+      newNums.push(numero); 
     }
+    // console.log('numero', numero);
+    // console.log('index', index);
+    // console.log('array', array);
   });
   return numsInside;
 }
