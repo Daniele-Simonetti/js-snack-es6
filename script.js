@@ -6,13 +6,13 @@
 const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 // console.log(nums);
 
-// let newNums = [];
+let newNums = [];
 // imposto una funzione
 function newArray(array, a, b) {
   const numsInside = array.forEach((numero) => {
     if (numero < b && numero > a) {
-      console.log(numero);
-      // newArray.push(numero);
+      // console.log(numero);
+      newNums.push(numero);
     }
   });
   return numsInside;
@@ -22,7 +22,7 @@ function newArray(array, a, b) {
 // nums.forEach((elements) => {
 // });
 newArray(nums, 2, 8);
-// console.log(newNums);
+console.log(newNums);
 
 
 
